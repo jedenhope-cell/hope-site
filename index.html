@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hope Search</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin: 0;
+      background: white;
+    }
+
+    nav {
+      background: #111;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .container {
+      margin-top: 80px;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    input {
+      width: 350px;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .info {
+      margin-top: 50px;
+      background: #f1f1f1;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div>Hope Search</div>
+  <div>
+    <a href="#">Accueil</a>
+    <a href="#">À propos</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <img src="WhatsApp Image 2026-03-20 at 11.55.04.jpeg">
+
+  <h1>Hope Search 🔍</h1>
+
+  <input type="text" id="search" placeholder="Rechercher...">
+  <br>
+  <button onclick="rechercher()">Rechercher</button>
+
+</div>
+
+<div class="info">
+  <h2>Bienvenue</h2>
+  <p>Je m'appelle Hope</p>
+  <p>J'apprends HTML, CSS et JavaScript</p>
+
+  <h3>À propos</h3>
+  <p>COLL Saint Boni</p>
+</div>
+
+<script>
+  function rechercher() {
+    let mot = document.getElementById("search").value.toLowerCase();
+
+    if (mot == "youtube") {
+      window.location.href = "https://www.youtube.com";
+    } 
+    else if (mot == "facebook") {
+      window.location.href = "https://www.facebook.com";
+    } 
+    else {
+      window.location.href = "https://www.bing.com/search?q" + mot;
+    }
+  }
+</script>
+
+</body>
+</html>
